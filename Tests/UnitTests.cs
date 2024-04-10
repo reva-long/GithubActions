@@ -116,11 +116,6 @@ public void Power_Invalid()
     Assert.Throws<FormatException>(() => Program.Power("e", "1"));
     Assert.Throws<FormatException>(() => Program.Power("e", "e"));
 }
-        [Test]
-public void Divide_Valid_FailingExample()
-{
-    Assert.AreEqual(2.0, Program.Divide("1", "2"));
-}
 
 
 [Test]
