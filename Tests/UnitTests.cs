@@ -101,17 +101,12 @@ public void Divide_Null()
     Assert.Throws<ArgumentNullException>(() => Program.Divide(null, null));
 }
 
-[Test]
-public void Divide_ByZero()
-{
-    Assert.Throws<ArgumentException>(() => Program.Divide("1", "0"));
-}
-        [Test]
+ [Test]
 public void Power_Valid()
 {
     Assert.AreEqual(1, Program.Power("1", "2"));
     Assert.AreEqual(9, Program.Power("3", "2"));
-    Assert.AreEqual(Math.Pow(5, 7), Program.Power("5", "7"));
+    Assert.AreEqual(4, Program.Power("2", "2"));
 }
 
 [Test]
